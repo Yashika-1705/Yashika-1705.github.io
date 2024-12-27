@@ -381,67 +381,74 @@ a:focus {
   background-color: #3f4f9f;
 }
 
-
-.about_section {
-  background-color: #f3f0f6;
+/* Projects Section */
+.projects_section {
+  padding: 50px 0;
+  background-color: #f9f9f9;
 }
 
-.about_section .row {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.projects_section .heading_container {
+  text-align: center;
+  margin-bottom: 30px;
 }
 
-.about_section .img_container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+.projects_section .projects_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
 }
 
-.about_section .img_container .img-box {
-  border: 5px solid #7b57b2;
-  border-radius: 100%;
+.project_box {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.about_section .img_container .img-box.b1 {
-  width: 70%;
+.project_box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
-.about_section .img_container .img-box.b2 {
-  width: 50%;
-  margin-left: auto;
-  margin-top: -12%;
-}
-
-.about_section .img_container .img-box img {
+.project_image img {
   width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 
-.about_section .detail-box {
-  margin-right: 15%;
+.project_detail {
+  padding: 20px;
 }
 
-.about_section .detail-box p {
-  margin-top: 25px;
+.project_detail h5 {
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 10px;
 }
 
-.about_section .detail-box a {
+.project_detail p {
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.project_link {
   display: inline-block;
-  padding: 10px 35px;
-  background-color: #4b208c;
-  color: #ffffff;
+  text-decoration: none;
+  color: #fff;
+  background-color: #007bff;
+  padding: 8px 15px;
   border-radius: 5px;
-  margin: 25px 0 45px 0;
+  font-size: 0.9em;
+  transition: background-color 0.3s;
 }
 
-.about_section .detail-box a:hover {
-  background-color: #5625a1;
+.project_link:hover {
+  background-color: #0056b3;
 }
+
 
 .blog_section .heading_container {
   -webkit-box-pack: center;
