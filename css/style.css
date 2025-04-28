@@ -300,7 +300,7 @@ a:focus {
 }
 
 .skills_section .container {
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -331,9 +331,11 @@ a:focus {
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 25px;
+  padding: 20px;
   text-align: center;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  width: 300px;         /* Set the width of each box */
+  height: 250px;
 }
 
 .skills_section .skill_box:hover {
