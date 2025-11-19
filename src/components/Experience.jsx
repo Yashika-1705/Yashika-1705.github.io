@@ -39,8 +39,9 @@ const Experience = () => {
       location: 'Toronto',
       period: 'Jul 2023 - Nov 2023',
       type: 'Part-time',
-      description: 'Provided personalized math instruction to students, helping them improve their understanding and performance in mathematics through interactive teaching methods.',
-      responsibilities: [],
+      responsibilities: [
+        'Taught foundational and advanced math concepts to 40+ students; developed individualized strategies to improve problem-solving and logical thinking'
+    ],
       skills: [],
       image: '/images/blog1.jpg',
       color: 'from-cs-blue to-cs-purple',
