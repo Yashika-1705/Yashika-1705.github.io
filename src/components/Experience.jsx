@@ -30,7 +30,7 @@ const Experience = () => {
         'Developed and deployed the MVP on AWS Managed Blockchain Cloud Environment, demonstrating end-to-end cloud architecture skills'
       ],
       skills: [],
-      image: '/images/blog2.jpg',
+      image: '/images/collabera.png',
       color: 'from-cs-purple to-cs-green',
     },
     {
@@ -43,7 +43,7 @@ const Experience = () => {
         'Taught foundational and advanced math concepts to 40+ students; developed individualized strategies to improve problem-solving and logical thinking'
     ],
       skills: [],
-      image: '/images/blog1.jpg',
+      image: '/images/Mathnasium_Logo.jpg',
       color: 'from-cs-blue to-cs-purple',
     },
   ]
@@ -65,7 +65,7 @@ const Experience = () => {
           {experiences.map((exp, index) => (
             <div
               key={index}
-              className="glass rounded-xl overflow-hidden hover:border-cs-blue/50 transition-all duration-300 group"
+              className="glass rounded-xl overflow-hidden hover:border-cs-blue-dark/50 transition-all duration-300 group"
             >
               <div className="grid md:grid-cols-12 gap-0">
                 {/* Image Section */}
@@ -84,35 +84,37 @@ const Experience = () => {
                 <div className="md:col-span-9 p-6">
                   <div className="flex items-start justify-between mb-3">
                     <div className="flex items-center space-x-2">
-                      <h3 className="text-xl font-bold text-white font-mono">
+                      <h3 className="text-xl font-bold text-gray-800 font-mono">
                         {exp.title}
                       </h3>
                     </div>
-                    <span className="text-cs-blue/60 font-mono text-xs px-3 py-1 bg-cs-blue/10 rounded-full">
+                    <span className="text-cs-blue-dark/70 font-mono text-xs px-3 py-1 bg-cs-blue-dark/15 rounded-full">
                       {exp.type}
                     </span>
                   </div>
                   
-                  <p className="text-cs-blue font-mono text-sm mb-2">
+                  <p className="text-cs-blue-dark font-mono text-sm mb-2 font-semibold">
                     {exp.company}
                   </p>
                   
-                  <div className="flex flex-wrap items-center gap-4 text-xs text-white/60 font-mono mb-4">
+                  <div className="flex flex-wrap items-center gap-4 text-xs text-cs-purple font-mono mb-4">
                     <span>{exp.period}</span>
-                    {exp.location && <span className="text-cs-green">📍 {exp.location}</span>}
+                    {exp.location && <span className="text-black">📍 {exp.location}</span>}
                   </div>
                   
-                  <p className="text-white/80 leading-relaxed mb-4">
-                    {exp.description}
-                  </p>
+                  {exp.description && (
+                    <p className="text-gray-700/90 leading-relaxed mb-4">
+                      {exp.description}
+                    </p>
+                  )}
 
                   {exp.responsibilities && exp.responsibilities.length > 0 && (
                     <div className="mb-4">
-                      <h4 className="text-cs-blue font-mono text-sm mb-2">Key Responsibilities & Accomplishments:</h4>
-                      <ul className="space-y-2 text-white/70 text-sm">
+                      <h4 className="text-cs-black font-mono text-sm mb-2 font-semibold">Key Responsibilities & Accomplishments:</h4>
+                      <ul className="space-y-2 text-gray-700/90 text-sm">
                         {exp.responsibilities.map((responsibility, idx) => (
                           <li key={idx} className="flex items-start">
-                            <span className="text-cs-green mr-2">-</span>
+                            <span className="text-cs-black mr-2">-</span>
                             <span>{responsibility}</span>
                           </li>
                         ))}
@@ -125,7 +127,7 @@ const Experience = () => {
                       {exp.skills.map((skill, skillIdx) => (
                         <span
                           key={skillIdx}
-                          className="px-3 py-1 bg-cs-dark/50 border border-cs-blue/30 rounded-full text-xs font-mono text-cs-blue"
+                          className="px-3 py-1 bg-white/60 border border-cs-blue-dark/40 rounded-full text-xs font-mono text-cs-blue-dark"
                         >
                           {skill}
                         </span>
@@ -142,9 +144,9 @@ const Experience = () => {
         <div className="mt-12 text-center">
           <div className="code-block inline-block">
             <span className="text-cs-green">$ </span>
-            <span className="text-white">echo "Always learning, always building"</span>
+            <span className="text-gray-300/80">echo "Always learning, always building"</span>
             <br />
-            <span className="text-cs-blue ml-4">Always learning, always building</span>
+            <span className="text-white ml-4">Always learning, always building</span>
           </div>
         </div>
       </div>

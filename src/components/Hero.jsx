@@ -38,16 +38,16 @@ const Hero = () => {
                 <div className="w-3 h-3 rounded-full bg-red-500"></div>
                 <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
                 <div className="w-3 h-3 rounded-full bg-green-500"></div>
-                <span className="ml-4 text-cs-blue/50 text-xs font-mono">terminal</span>
+                <span className="ml-4 text-white text-xs font-mono">terminal</span>
               </div>
               <div className="space-y-2 font-mono text-sm">
                 <div>
                   <span className="text-cs-green">$ </span>
                   <span className="text-white">whoami</span>
                 </div>
-                <div className="text-cs-blue ml-4">
+                <div className="text-white ml-4">
                   {typedText}
-                  {showCursor && <span className="terminal-cursor text-cs-blue">|</span>}
+                  {showCursor && <span className="terminal-cursor text-cs-blue-dark">|</span>}
                 </div>
                 <div className="mt-4">
                   <span className="text-cs-green">$ </span>
@@ -55,7 +55,7 @@ const Hero = () => {
                 </div>
                 <div className="text-white/80 ml-4 leading-relaxed">
                   <p className="mt-2">
-                    I'm a <span className="text-cs-blue font-semibold">third-year Computer Science and Statistics student</span> at the{' '}
+                    I'm a <span className="text-cs-blue-dark font-semibold">third-year Computer Science and Statistics student</span> at the{' '}
                     <span className="text-cs-purple font-semibold">University of Toronto</span> with a passion for solving challenges through technology.
                   </p>
                   <p className="mt-2">
@@ -82,7 +82,7 @@ const Hero = () => {
               </a>
               <button
                 onClick={() => document.getElementById('experience')?.scrollIntoView({ behavior: 'smooth' })}
-                className="px-6 py-3 border-2 border-cs-blue text-cs-blue rounded-lg font-mono hover:bg-cs-blue/10 transition-all"
+                className="px-6 py-3 border-2 border-cs-blue-dark text-cs-blue-dark rounded-lg font-mono hover:bg-cs-blue-dark/10 transition-all"
               >
                 $ view experience
               </button>

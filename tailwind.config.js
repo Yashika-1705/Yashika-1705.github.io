@@ -8,7 +8,9 @@ export default {
     extend: {
       colors: {
         'cs-dark': '#abb2dd',
+        'cs-terminal': '#0a0e27',
         'cs-blue': '#00d9ff',
+        'cs-blue-dark': '#0066cc',
         'cs-purple': '#b026ff',
         'cs-green': '#00ff88',
         'cs-yellow': '#ffd700',

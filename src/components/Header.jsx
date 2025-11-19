@@ -31,15 +31,15 @@ const Header = () => {
   return (
     <header
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        scrolled ? 'glass shadow-lg shadow-cs-blue/20' : 'bg-transparent'
+        scrolled ? 'glass shadow-lg shadow-cs-blue-dark/20' : 'bg-transparent'
       }`}
     >
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="text-xl font-mono font-bold">
-            <span className="text-cs-blue">&lt;</span>
+            <span className="text-cs-blue-dark">&lt;</span>
             <span className="text-gradient">YashikaJain</span>
-            <span className="text-cs-blue">/&gt;</span>
+            <span className="text-cs-blue-dark">/&gt;</span>
           </div>
 
           {/* Desktop Menu */}
@@ -48,11 +48,11 @@ const Header = () => {
               <li key={item.id}>
                 <button
                   onClick={() => scrollToSection(item.id)}
-                  className="text-white/80 hover:text-cs-blue transition-colors font-mono text-sm relative group"
+                  className="text-gray-800/90 hover:text-cs-blue-dark transition-colors font-mono text-sm relative group"
                 >
-                  <span className="text-cs-green"># </span>
+                  <span className="text-cs-purple"># </span>
                   {item.name}
-                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-cs-blue group-hover:w-full transition-all duration-300"></span>
+                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-cs-blue-dark group-hover:w-full transition-all duration-300"></span>
                 </button>
               </li>
             ))}
@@ -61,7 +61,7 @@ const Header = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className="md:hidden text-cs-blue focus:outline-none"
+            className="md:hidden text-cs-blue-dark focus:outline-none"
           >
             <div className="space-y-1.5">
               <span className={`block w-6 h-0.5 bg-current transition-all ${menuOpen ? 'rotate-45 translate-y-2' : ''}`}></span>
@@ -78,7 +78,7 @@ const Header = () => {
               <li key={item.id}>
                 <button
                   onClick={() => scrollToSection(item.id)}
-                  className="text-white/80 hover:text-cs-blue transition-colors font-mono text-sm w-full text-left"
+                  className="text-gray-800/90 hover:text-cs-blue-dark transition-colors font-mono text-sm w-full text-left"
                 >
                   <span className="text-cs-green"># </span>
                   {item.name}

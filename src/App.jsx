@@ -25,7 +25,7 @@ function App() {
             <span className="text-cs-blue">loading portfolio...</span>
             <span className="terminal-cursor"></span>
           </div>
-          <div className="text-cs-blue/50 text-sm font-mono">
+          <div className="text-white font-mono text-sm">
             Initializing system...
           </div>
         </div>

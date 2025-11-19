@@ -11,7 +11,7 @@
 body {
   font-family: 'Inter', sans-serif;
   background: #abb2dd;
-  color: #ffffff;
+  color: #1a1a2e;
   overflow-x: hidden;
 }
 
@@ -21,11 +21,16 @@ body {
   }
   
   .glass {
-    @apply bg-white/5 backdrop-blur-md border border-white/10;
+    @apply bg-white/20 backdrop-blur-md border border-gray-300/30;
   }
   
   .code-block {
-    @apply bg-cs-dark/50 border border-cs-blue/30 rounded-lg p-4 font-mono text-sm;
+    background-color: #0a0e27;
+    border: 1px solid rgba(0, 102, 204, 0.3);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    font-family: 'Courier New', monospace;
+    font-size: 0.875rem;
   }
 }
 
@@ -39,7 +44,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #00d9ff;
+  background: #4f3072;
   border-radius: 5px;
 }
 

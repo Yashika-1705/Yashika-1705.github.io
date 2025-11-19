@@ -9,27 +9,15 @@ const Skills = () => {
       color: 'from-cs-blue to-cs-purple',
     },
     {
-      category: 'Artificial Intelligence',
-      icon: '🤖',
-      tech: ['Machine Learning', 'Generative AI', 'Neural Networks', 'LLMs'],
-      color: 'from-cs-purple to-cs-green',
-    },
-    {
-      category: 'Web Development',
+      category: 'Frameworks/ML',
       icon: '🌐',
-      tech: ['React', 'HTML/CSS', 'JavaScript', 'Streamlit'],
+      tech: ['React', 'Flask', 'FastAPI', 'LangChain', 'PyTorch', 'TensorFlow', 'Vertex AI'],
       color: 'from-cs-green to-cs-blue',
     },
     {
-      category: 'Version Control',
-      icon: '📦',
-      tech: ['Git', 'GitHub', 'GitLab'],
-      color: 'from-cs-yellow to-cs-blue',
-    },
-    {
-      category: 'Cloud Services',
+      category: 'Tools/Cloud/DB',
       icon: '☁️',
-      tech: ['AWS', 'Google Cloud Platform', 'Vertex AI'],
+      tech: ['Git', 'Docker', 'Linux', 'GCP', 'AWS', 'Kubernetes', 'MySQL', 'ChromaDB', 'FAISS', 'OpenSearch'],
       color: 'from-cs-blue to-cs-green',
     },
   ]
@@ -53,13 +41,13 @@ const Skills = () => {
           {skills.map((skill, index) => (
             <div
               key={index}
-              className="glass rounded-xl p-6 hover:border-cs-blue/50 transition-all duration-300 transform hover:scale-105 cursor-pointer group"
+              className="glass rounded-xl p-6 hover:border-cs-blue-dark/50 transition-all duration-300 transform hover:scale-105 cursor-pointer group"
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
             >
               <div className="flex items-center space-x-3 mb-4">
                 <span className="text-3xl">{skill.icon}</span>
-                <h3 className="text-xl font-bold text-white font-mono">
+                <h3 className="text-xl font-bold text-gray-800 font-mono">
                   {skill.category}
                 </h3>
               </div>
@@ -71,7 +59,7 @@ const Skills = () => {
                     className={`inline-block mr-2 mb-2 px-3 py-1 rounded-full text-xs font-mono border transition-all ${
                       hoveredIndex === index
                         ? `bg-gradient-to-r ${skill.color} text-white border-transparent`
-                        : 'bg-cs-dark/50 border-cs-blue/30 text-cs-blue'
+                        : 'bg-cs-dark/50 border-cs-gray-800 text-gray-800'
                     }`}
                     style={{
                       transitionDelay: `${techIndex * 50}ms`,

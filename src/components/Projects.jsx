@@ -23,7 +23,7 @@ const Projects = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null)
 
   return (
-    <section id="projects" className="py-20 px-6 bg-cs-dark/50">
+    <section id="projects" className="py-20 px-6 bg-white/10">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
           <div className="code-block inline-block mb-4">
@@ -33,7 +33,7 @@ const Projects = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-gradient mb-4 font-mono">
             &lt;Projects /&gt;
           </h2>
-          <p className="text-white/60 font-mono text-sm">
+          <p className="text-gray-700/80 font-mono text-sm">
             // Code that solves real-world problems
           </p>
         </div>
@@ -43,7 +43,7 @@ const Projects = () => {
             <div
               key={index}
               className={`glass rounded-2xl overflow-hidden transition-all duration-500 transform ${
-                hoveredIndex === index ? 'scale-105 border-cs-blue/50' : ''
+                hoveredIndex === index ? 'scale-105 border-cs-blue-dark/50' : ''
               }`}
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
@@ -66,18 +66,18 @@ const Projects = () => {
                   <div>
                     <div className="flex items-center space-x-2 mb-4">
                       <span className="text-cs-green font-mono text-sm">#</span>
-                      <h3 className="text-2xl font-bold text-white font-mono">
+                      <h3 className="text-2xl font-bold text-gray-800 font-mono">
                         {project.title}
                       </h3>
                     </div>
-                    <p className="text-white/70 mb-6 leading-relaxed">
+                    <p className="text-gray-700/90 mb-6 leading-relaxed">
                       {project.description}
                     </p>
                     <div className="flex flex-wrap gap-2 mb-6">
                       {project.tech.map((tech, techIndex) => (
                         <span
                           key={techIndex}
-                          className="px-3 py-1 bg-cs-dark/50 border border-cs-blue/30 rounded-full text-xs font-mono text-cs-blue"
+                          className="px-3 py-1 bg-white/60 border border-cs-blue-dark/40 rounded-full text-xs font-mono text-cs-blue-dark"
                         >
                           {tech}
                         </span>

@@ -20,7 +20,7 @@ const Contact = () => {
   ]
 
   return (
-    <section id="contact" className="py-20 px-6 bg-cs-dark/50">
+    <section id="contact" className="py-20 px-6 bg-white/10">
       <div className="container mx-auto max-w-4xl">
         <div className="text-center mb-16">
           <div className="code-block inline-block mb-4">
@@ -37,7 +37,7 @@ const Contact = () => {
           <div className="glass rounded-xl p-8">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <label className="block text-cs-blue font-mono text-sm mb-2">
+                <label className="block text-cs-blue-dark font-mono text-sm mb-2">
                   $ name
                 </label>
                 <input
@@ -45,12 +45,12 @@ const Contact = () => {
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   required
-                  className="w-full px-4 py-3 bg-cs-dark/50 border border-cs-blue/30 rounded-lg text-white font-mono focus:border-cs-blue focus:outline-none focus:ring-2 focus:ring-cs-blue/50 transition-all"
+                  className="w-full px-4 py-3 bg-white/80 border border-cs-blue-dark/40 rounded-lg text-gray-800 font-mono focus:border-cs-blue-dark focus:outline-none focus:ring-2 focus:ring-cs-blue-dark/50 transition-all"
                   placeholder="Your name"
                 />
               </div>
               <div>
-                <label className="block text-cs-blue font-mono text-sm mb-2">
+                <label className="block text-cs-blue-dark font-mono text-sm mb-2">
                   $ email
                 </label>
                 <input
@@ -58,12 +58,12 @@ const Contact = () => {
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   required
-                  className="w-full px-4 py-3 bg-cs-dark/50 border border-cs-blue/30 rounded-lg text-white font-mono focus:border-cs-blue focus:outline-none focus:ring-2 focus:ring-cs-blue/50 transition-all"
+                  className="w-full px-4 py-3 bg-white/80 border border-cs-blue-dark/40 rounded-lg text-gray-800 font-mono focus:border-cs-blue-dark focus:outline-none focus:ring-2 focus:ring-cs-blue-dark/50 transition-all"
                   placeholder="your.email@example.com"
                 />
               </div>
               <div>
-                <label className="block text-cs-blue font-mono text-sm mb-2">
+                <label className="block text-cs-blue-dark font-mono text-sm mb-2">
                   $ message
                 </label>
                 <textarea
@@ -71,7 +71,7 @@ const Contact = () => {
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   required
                   rows={6}
-                  className="w-full px-4 py-3 bg-cs-dark/50 border border-cs-blue/30 rounded-lg text-white font-mono focus:border-cs-blue focus:outline-none focus:ring-2 focus:ring-cs-blue/50 transition-all resize-none"
+                  className="w-full px-4 py-3 bg-white/80 border border-cs-blue-dark/40 rounded-lg text-gray-800 font-mono focus:border-cs-blue-dark focus:outline-none focus:ring-2 focus:ring-cs-blue-dark/50 transition-all resize-none"
                   placeholder="Your message here..."
                 ></textarea>
               </div>
@@ -87,22 +87,22 @@ const Contact = () => {
           {/* Contact Info */}
           <div className="space-y-8">
             <div className="glass rounded-xl p-8">
-              <h3 className="text-2xl font-bold text-white font-mono mb-6">
+              <h3 className="text-2xl font-bold text-gray-800 font-mono mb-6">
                 <span className="text-cs-green"></span> Get in touch
               </h3>
-              <div className="space-y-4 text-white/70 font-mono">
+              <div className="space-y-4 text-gray-700/90 font-mono">
                 <div className="flex items-start space-x-4">
-                  <span className="text-cs-blue">📍</span>
+                  <span className="text-cs-blue-dark">📍</span>
                   <div>
-                    <div className="text-cs-blue mb-1">Location</div>
+                    <div className="text-cs-blue-dark mb-1 font-semibold">Location</div>
                     <div>Toronto, Ontario, Canada</div>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
                   <span className="text-cs-green">📧</span>
                   <div>
-                    <div className="text-cs-blue mb-1">Email</div>
-                    <a href="mailto:yashika1705@gmail.com" className="hover:text-cs-blue transition-colors">
+                    <div className="text-cs-blue-dark mb-1 font-semibold">Email</div>
+                    <a href="mailto:yashika1705@gmail.com" className="hover:text-cs-blue-dark transition-colors">
                       yashika1705@gmail.com
                     </a>
                   </div>
@@ -112,7 +112,7 @@ const Contact = () => {
 
             {/* Social Links */}
             <div className="glass rounded-xl p-8">
-              <h3 className="text-2xl font-bold text-white font-mono mb-6">
+              <h3 className="text-2xl font-bold text-gray-800 font-mono mb-6">
                 <span className="text-cs-green"></span> Social Links
               </h3>
               <div className="space-y-4">
@@ -122,13 +122,13 @@ const Contact = () => {
                     href={link.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center space-x-4 p-4 bg-cs-dark/50 border border-cs-blue/30 rounded-lg hover:border-cs-blue hover:bg-cs-blue/10 transition-all group"
+                    className="flex items-center space-x-4 p-4 bg-white/60 border border-cs-blue-dark/40 rounded-lg hover:border-cs-blue-dark hover:bg-cs-blue-dark/10 transition-all group"
                   >
                     <span className="text-2xl">{link.icon}</span>
-                    <span className="text-white font-mono group-hover:text-cs-blue transition-colors">
+                    <span className="text-gray-800 font-mono group-hover:text-cs-blue-dark transition-colors">
                       {link.name}
                     </span>
-                    <svg className="w-5 h-5 ml-auto text-cs-blue/50 group-hover:text-cs-blue transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 ml-auto text-cs-blue-dark/60 group-hover:text-cs-blue-dark transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                     </svg>
                   </a>
