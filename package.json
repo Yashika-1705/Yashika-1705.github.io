@@ -1,0 +1,38 @@
+{
+  "name": "yashika-1705.github.io",
+  "version": "2.0.0",
+  "description": "Portfolio of Yashika Jain - Computer Science student at University of Toronto specializing in AI, Machine Learning, and software development",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "npm run build && npm run gh-pages",
+    "gh-pages": "gh-pages -d dist"
+  },
+  "keywords": [
+    "portfolio",
+    "react",
+    "computer-science",
+    "ai",
+    "machine-learning"
+  ],
+  "author": "Yashika Jain",
+  "license": "ISC",
+  "homepage": "https://Yashika-1705.github.io/",
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.1.1",
+    "autoprefixer": "^10.4.22",
+    "eslint": "^9.39.1",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.4.24",
+    "gh-pages": "^6.3.0",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.0",
+    "vite": "^7.2.2"
+  }
+}

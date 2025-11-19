@@ -1,30 +1,48 @@
-# Yashika Jain – Portfolio
+# Yashika Jain - Portfolio
 
-Welcome to my portfolio! I’m a **third-year Computer Science student at the University of Toronto**, passionate about **AI, machine learning, and full-stack development**. I build projects that solve real-world problems and showcase practical skills in **cloud computing, AI, and software engineering**.
+A modern, CS-themed React portfolio website showcasing projects, skills, and experience.
 
----
+## Features
 
-## 🔹 Professional Experience
+- 🎨 **CS-Themed Design** - Terminal-inspired UI with code-style elements
+- ⚡ **Modern React** - Built with React 18 and Vite
+- 🎭 **Smooth Animations** - Interactive hover effects and transitions
+- 📱 **Responsive** - Works perfectly on all devices
+- 🚀 **Fast** - Optimized for performance
 
-**Vegas Consulting** | April 2025 – Present  
-**Lead Agentic AI Engineer – MAGI (AI Assistant for Manufacturing & Service Teams)**  
+## Tech Stack
 
-- Designed and led the AI architecture for a **SaaS assistant** enabling real-time search and guidance across **10,000+ manufacturing documents**.  
-- Built **multi-agent RAG pipelines** with **Vertex AI, LangChain, ChromaDB/Pinecone, and Neo4j**; optimized latency, cost, and retrieval quality.  
-- Developed the **end-to-end stack** (FastAPI/Flask + React) with **Stripe integration**; achieved **<500ms response times** via vector search and prompt optimization.  
-- **Containerized and deployed** services on **GKE with Docker + Cloud Build CI/CD**, reducing pilot infrastructure costs by 40%.  
-- Integrated with **ERP workflows (REST APIs)** and led **testing + product strategy**, aligning engineering with business goals.
+- React 18
+- Vite
+- Tailwind CSS
+- GitHub Pages
 
----
+## Getting Started
 
-## 🔹 Skills & Tools
-- **Programming & Frameworks:** Python, Java, JavaScript, React, FastAPI, Flask  
-- **AI & Cloud:** Vertex AI, LangChain, ChromaDB, Pinecone, Neo4j, Docker, GKE, Cloud Build CI/CD  
-- **Other:** Stripe integration, REST APIs, SaaS product architecture, vector search  
+### Install dependencies
 
----
+```bash
+npm install
+```
 
-## 🔹 Connect with Me
-- [LinkedIn](https://www.linkedin.com/in/yashika-jain/)  
-- [Portfolio](https://yashika-1705.github.io)  
-- [Email](mailto:yashika1705@gmail.com)
+### Development
+
+```bash
+npm run dev
+```
+
+### Build
+
+```bash
+npm run build
+```
+
+### Deploy
+
+```bash
+npm run deploy
+```
+
+## License
+
+© 2024 Yashika Jain. All Rights Reserved.
