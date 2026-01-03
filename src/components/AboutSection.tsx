@@ -15,7 +15,7 @@ const AboutSection = () => {
             <h2 className="text-3xl md:text-4xl font-semibold mb-6">Background</h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                Third-year Computer Science undergraduate with a focus on machine learning 
+                I'm a third-year Computer Science undergraduate with a focus on machine learning 
                 systems and applied AI. My interest lies at the intersection of ML 
                 engineering and infrastructure—building systems that are not just accurate 
                 but reliable, observable, and maintainable.
